@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #1849c6;
+    --accent-color: #ffce30;
+    --yellow-400: #4D3F10;
+    --gray-900: #DADEE7;
+    --gray-800: #D9D9D9;
+    --gray-600: #979797;
+    --gray-400: #4D4E4F;
+    --gray-200: #2F2F2F;
+    --blue-900: #F6F8FE;
+    --blue-800: #E8EFFF;
+    --blue-100: #021750;
+    --white: #fff;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    color: var(--white);
+    text-decoration: none;
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.btn--primary {
+    color: var(--blue-100);
+    background: var(--accent-color);
+}
+.btn--large {
+    padding: 30px 40px;
+}
+.btn--small {
+    padding: 15px 20px;
+}
+
+[data-margin-top] {
+    margin-top: attr(margin-top);
+}
+
+
+.bg-primary {
+    color: var(--white);
+    background-color: var(--primary-color);
+}
+
+.px-l {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1245px;
+    margin: auto;
+    padding: 95px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.cards--col-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.cards--col-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.card {
+    color: var(--gray-200);
+    background: var(--blue-900);
+    border-radius: 10px;
+    padding: 20px;
+}
+.card__btn {
+    text-align: center;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/*
+ *** Site Header ***
+*/
+.site-header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+/*
+ *** HERO SECTION ***
+*/
+.hero {
+    background: var(--primary-color) url('./bg-hero.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    padding-top: 175px;
+}
+.hero:after {
+    content: '';
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+ *** Listings ***
+*/
+.listings {
+
+}
